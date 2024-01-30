@@ -1,3 +1,15 @@
+campaignTrail_temp.achievements = {
+  "Senator Pothole Rides Again!" : {
+      "image" : "https://www.bkmag.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-15-at-4.41.53-PM.png",
+      "description" : "As Al D'Amato, win the election.",
+      "cannotBeCheated" : true
+  },
+"I Thought It Was a Matter of Public Record" : {
+      "image" : "https://pyxis.nymag.com/v1/imgs/5c6/b88/90c8ee4ee694b2a8d3a0598619d8293870-norm-macdonald.rsquare.w400.jpg",
+      "description" : "Proclaim you want to get the murder out of the White House.",
+      "cannotBeCheated" : true
+  },
+}
 if (!e.temp) {
     e.temp = "[undertale reference here]";
 document.getElementById('header').src = "https://i.imgur.com/xtzm3yi.jpeg"
@@ -13,7 +25,7 @@ campaignTrail_temp.candidate_dropout_json = JSON.parse("[{\"model\": \"campaign_
 campaignTrail_temp.temp_election_list = [{"id": 15, "year": 1998, "is_premium": 0, "display_year": "1998NY"}];
 campaignTrail_temp.show_premium = true;
 campaignTrail_temp.premier_ab_test_version = -1;
-campaignTrail_temp.credits = 'Accurate_Feature9970<br>2000N for music player';
+campaignTrail_temp.credits = 'Accurate_Feature9970<br>Special thanks to ItsAstronomics for playtesting<br>2000N for music player';
 document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
 $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
 $(".container")[0].style.backgroundColor = "#002387";
