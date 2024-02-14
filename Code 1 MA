@@ -23,12 +23,12 @@ $("#game_window")[0].style.backgroundColor = "#FFFFFF"
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#E6A300" 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#1F2C5C"
 campaignTrail_temp.modBoxTheme = {
-  "header_color" : "#E6A300",
+  "header_color" : "#FFE600",
   "header_text_color" : "#000000",
-  "description_text_color" : "#FFFFFF",
-  "description_background_color" : "#1F2C5C",
-  "main_color" : "#FF2400",
-  "secondary_color" : "#264e36",
+  "description_text_color" : "#000000",
+  "description_background_color" : "#FFFFFF",
+  "main_color" : "#1F2C5C",
+  "secondary_color" : "#FFE600",
   "ui_text_color": "#000000"
 }
 HistHexcolour=["#FF0000","#0000FF","#FFE14A","#D917D9"];
