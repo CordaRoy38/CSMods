@@ -1,0 +1,568 @@
+e=campaignTrail_temp
+
+if (!e.runIntro) {
+e.runIntro = true;
+
+RecReading=true
+campaignTrail_temp.election_json = [{
+    "model": "campaign_trail.election",
+    "pk": 10,
+    "fields": {
+        "year": 2000,
+        "summary": "<p><div style='overflow-y:scroll;height:150px;'>The dawn of the new millennium brings about an election for a new president. Democrat Hamilton Hill and Republican Wayne Eden are campaigning to be the next major party president, while newcomer to the political scene, beloved billionaire philanthropist Alexander Joseph Luthor, seeks to become the first third party president in more than a century.</p><ul><li>Luthor will need to promise an alternative vision for the United States, leaning heavily on populist politics to differentiate himself from the standard, unexceptional policies and visions for the country proposed by his opponents.</li><li>Hill must consolidate the Democratic Party base of support, and effectively sell how his career as mayor of Gotham City has prepared him for the presidency.</li><li>Eden has to properly market himself as the candidate for both the Republican Party and independent Americans, using his storied career in the Senate as a blueprint for the country.</li></ul>",
+        "image_url": "https://i.imgur.com/plVQjHv.jpeg",
+        "winning_electoral_vote_number": 270,
+        "advisor_url": "https://i.imgur.com/dJWZMc8.png",
+        "recommended_reading": "<div style=\"overflow-y:scroll;height:357.133px;font-size:1em;\"><h4 style=\\\"margin-top: 0.5em;\\\">Gus Hall &amp; the CPUSA</h4><a href=\\\"https://www.goodreads.com/en/book/show/1749496\\\" target=\\\"_blank\\\">Buhle, Paul. 2013. Marxism in the United States: Remapping the History of the American Left. Revised and Expanded edition. London: Verso.</a><br><a href=\\\"https://vault.fbi.gov/solo\\\" target=\\\"_blank\\\">Federal Bureau of Investigation. 2011. “SOLO.” Folder. FBI Vault. August 2011</a><br><a href=\\\"https://books.google.com/books?hl=en&amp;lr=&amp;id=3wbWDwAAQBAJ\\\" target=\\\"_blank\\\">Gornick, Vivian. 2020. The Romance of American Communism. Second Edition. Verso Books.</a><br><a href=\\\"https://www.marxists.org/archive/hall/index.htm\\\" target=\\\"_blank\\\">Marxists Internet Archive. 2021. “Gus Hall.” Marxists.Org. April 2021.</a><br><a href=\\\"https://scientiarum.fi/wp-content/uploads/2021/01/Savonen-vaitos-B5-final-web.pdf\\\" target=\\\"_blank\\\">Savonen, Tuomas. 2020. “Minnesota, Moscow, Manhattan: Gus Hall’s Life and Political Line Until the Late 1960s.” Commentationes Scientiarum Socialium.</a><br><h4 style=\\\"margin-top: 1.7em;\\\">Ed Sadlowski</h4><p><a href=\\\"https://talkingunion.wordpress.com/2010/09/11/kaiser-permanente-elections/\\\" target=\\\"_blank\\\">Campbell, Duane, on September 11, and 2010 at 8:01 Pm Said. 2010. “An Interview with Ed Sadlowski: The Kaiser Permanente Elections.” Talking Union (blog). September 11, 2010.</a><br><a href=\\\"https://www.peoplesworld.org/article/ed-sadlowski-remembrance-of-a-life-even-bigger-than-the-man/\\\" target=\\\"_blank\\\">Kaczocha, Paul S. 2018. “Ed Sadlowski – Remembrance of a Life Even Bigger than the Man.” People’s World (blog). August 7, 2018.</a><br><a href=\\\"https://www.nytimes.com/interactive/2018/12/27/magazine/lives-they-lived-ed-sadlowski.html\\\" target=\\\"_blank\\\">Kotlowitz, Alex. 2018. “Ed Sadlowski, the Unrepentant Progressive Who Went After Steel Company Owners and Oblivious Union Heads Alike.” The New York Times, December 27, 2018, sec. Magazine..</a><br><a href=\\\"https://www.nytimes.com/1976/12/19/archives/oilcan-eddie-takes-on-the-old-guard-a-rebel-candidate-for-president.html\\\" target=\\\"_blank\\\">Kotz, Nick. 1976. “Oilcan Eddie Takes on the Old Guard.” The New York Times, December 19, 1976, sec. Archives.</a><br><a href=\\\"https://studsterkel.wfmt.com/programs/discussing-steelworkers-and-labor-unions-edward-sadlowski-and-theodore-smolarek\\\" target=\\\"_blank\\\">Sadlowski, Edward, and Theodore Smolarek. 1974. Discussing steelworkers and labor unions with Edward Sadlowski and Theodore Smolarek.</a></p><h4 style=\\\"margin-top: 1.7em;\\\">Ron Kovic</h4><a href=\\\"https://www.youtube.com/watch?v=zrAg45MNcQ0\\\" target=\\\"_blank\\\">Cavestani, Frank, and Catherine Leroy, dirs. n.d. Operation Last Patrol. Documentary. Frank Cavestani.</a><br><a href=\\\"https://www.goodreads.com/book/show/55752978-how-white-men-won-the-culture-wars?from_search=true&amp;from_srp=true&amp;qid=LjYaqJa1by&amp;rank=1\\\" target=\\\"_blank\\\">Darda, Joseph. 2021. How White Men Won the Culture Wars: A History of Veteran America. First edition. Oakland, California: University of California Press.</a><br><a href=\\\"https://www.goodreads.com/book/show/16476714-remembering-viet-nam?ref=nav_sb_ss_1_109\\\" target=\\\"_blank\\\">Fuchs, Regula. 2010. Remembering Viet Nam: Gustav Hasford, Ron Kovic, Tim O’Brien and the Fabrication of American Cultural Memory. Peter Lang.</a><br><a href=\\\"https://www.goodreads.com/book/show/33613.Born_on_the_Fourth_of_July?from_search=true&amp;from_srp=true&amp;qid=1mNW2CkHmB&amp;rank=1\\\" target=\\\"_blank\\\">Kovic, Ron. 2016. Born on the Fourth of July: 40th Anniversary Edition. Akashic Books.</a><br><h4 style=\\\"margin-top: 1.7em;\\\">Angela Davis</h4><a href=\\\"https://www.youtube.com/watch?v=zrAg45MNcQ0\\\" target=\\\"_blank\\\">Davis, Angela Y. Angela Davis--an Autobiography. International Publishers, 1988.</a><br><a href=\\\"https://www.goodreads.com/book/show/635635.Women_Race_Class?from_search=true&amp;from_srp=true&amp;qid=WErjONER57&amp;rank=4\\\" target=\\\"_blank\\\">Davis, Angela Y. Women, Race &amp; Class. 1st Vintage Books ed, Vintage Books, 1983.</a><br><a href=\\\"https://www.imdb.com/title/tt2350432/\\\" target=\\\"_blank\\\">Lynch, Shola, et al. Free Angela, and All Political Prisoners. Lionsgate, 2013.</a><br><a href=\\\"https://www.goodreads.com/book/show/12827987-dreaming-in-french?from_search=true&amp;from_srp=true&amp;qid=mGDiUve3Qa&amp;rank=3\\\" target=\\\"_blank\\\">Kaplan, Alice Yaeger. Dreaming in French: The Paris Years of Jacqueline Bouvier Kennedy, Susan Sontag, and Angela Davis. University of Chicago Press, 2012.</a><br><h4 style=\\\"margin-top: 1.7em;\\\">Jane Fonda</h4><a href=\\\"https://www.goodreads.com/book/show/148355.My_Life_So_Far?ref=nav_sb_ss_1_26\\\" target=\\\"_blank\\\">Fonda, Jane. 2006. My Life So Far. New York: Random House Trade Paperbacks.</a><br><a href=\\\"https://doi.org/10.1111/pech.12458\\\" target=\\\"_blank\\\">King, Sarah. 2021. “The FTA Show: Jane Fonda, the GI Movement, and Celebrity Activism in the Late Vietnam War.” Peace &amp; Change 46 (2): 119–41.</a><br><a href=\\\"https://www.imdb.com/title/tt7689958/\\\" target=\\\"_blank\\\">Lacy, Susan, dir. 2018. Jane Fonda in Five Acts. Documentary, Biography. HBO Documentary Films, Pentimento Productions.</a><br><a href=\\\"https://www.goodreads.com/book/show/8457929-hanoi-jane?ref=nav_sb_ss_1_47\\\" target=\\\"_blank\\\">Lembcke, Jerry. 2010. Hanoi Jane: War, Sex, and Fantasies of Betrayal. First edition. Amherst: University of Massachusetts Press.</a><br><a href=\\\"https://www.nytimes.com/1975/12/16/archives/70-effort-by-hoover-to-discredit-jane-fonda-described-in-memo.html\\\" target=\\\"_blank\\\">The New York Times. 1975. “’70 Effort by Hoover to Discredit Jane Fonda Described in Memo,” December 16, 1975, sec. Archives.</a><br><h4 style=\\\"margin-top: 1.7em;\\\">Bobby Seale</h4><a href=\\\"https://www.goodreads.com/book/show/6561790-the-assassination-of-fred-hampton?ref=nav_sb_ss_3_14\\\" target=\\\"_blank\\\">Haas, Jeffrey. The Assassination of Fred Hampton: How the FBI and the Chicago Police Murdered a Black Panther. Lawrence Hill Books/Chicago Review Press, 2010.</a><br><a href=\\\"https://www.goodreads.com/book/show/3423398-agony-in-new-haven?ref=nav_sb_ss_1_18\\\" target=\\\"_blank\\\">Freed, Donald. Agony in New Haven: The Trial of Bobby Seale, Ericka Huggins, and the Black Panther Party. Simon and Schuster, 1973.</a><br><a href=\\\"https://www.marxists.org/history/usa/workers/black-panthers/\\\" target=\\\"_blank\\\">Baggins, Brian. 2002. “Black Panther Party.” Marxists.org. 2002.</a><br><a href=\\\"https://www.marxists.org/history/usa/workers/black-panthers/1966/10/15.htm\\\" target=\\\"_blank\\\">Black Panthers. 2001. “Black Panther’s Ten-Point Program.” Marxists.org. 2001.</a><br><a href=\\\"https://doi.org/10.14321/jstudradi.8.2.0109\\\" target=\\\"_blank\\\">Kuykendall. 2014. “Black against Empire: The History and Politics of the Black Panther Party.” Journal for the Study of Radicalism 8 (2): 109.</a><br><h4 style=\\\"margin-top: 1.7em;\\\">Tom Hayden</h4><a href=\\\"https://www.goodreads.com/book/show/3105564-writings-for-a-democratic-society?ref=nav_sb_ss_2_10\\\" target=\\\"_blank\\\">Hayden, Tom. Writings for a Democratic Society: The Tom Hayden Reader. City Lights Books, 2008.</a><br><a href=\\\"https://www.mtsu.edu/first-amendment/article/1201/students-for-a-democratic-society\\\" target=\\\"_blank\\\">Riggs, William W. 2009. “Students for a Democratic Society.” Www.mtsu.edu. 2009.</a><br><a href=\\\"https://www.goodreads.com/book/show/544036.The_Port_Huron_Statement?from_search=true&amp;from_srp=true&amp;qid=GknDSNAfq1&amp;rank=2\\\" target=\\\"_blank\\\">Hayden, Tom, and Students For A Democratic Society (U.S. 2006. The Port Huron Statement : Vision Call of the 1960s Revolution. New York: Thunder’s Mouth ; Enfield.</a><br><a href=\\\"https://www.goodreads.com/book/show/232852.Outlaws_of_America?from_search=true&amp;from_srp=true&amp;qid=VXiTFaLVQe&amp;rank=2\\\" target=\\\"_blank\\\">Berger, Dan. 2006. Outlaws of America : The Weather Underground and the Politics of Solidarity. Oakland, Ca: Ak Press.</a><br><a href=\\\"https://digicoll.library.wisc.edu/cgi/f/findaid/findaid-idx?c=wiarchives;cc=wiarchives;rgn=main;view=text;didno=uw-whs-mss00177\\\" target=\\\"_blank\\\">Students for a Democratic Society Records, 1958-1970. Archival Resources in Wisconsin: Descriptive Finding Aids.</a><br><h4 style=\\\"margin-top: 1.7em;\\\">Other</h4><a href=\\\"https://www.goodreads.com/book/show/2393575.Nixonland?ref=nav_sb_ss_1_9\\\" target=\\\"_blank\\\">Perlstein, Rick. 2008. Nixonland : The Rise of a President and the Fracturing of America. New York: Simon &amp; Schuster.</a><br><a href=\\\"https://repository.law.umich.edu/cgi/viewcontent.cgi?article=2324&amp;context=mjlr\\\" target=\\\"_blank\\\">Communist Party of Indiana et al., Appellants, v. Edgar D. Whitcomb, etc., et al. 1974. US Supreme Court.Liss, Jeffrey F. 1973. “Political Candidates’ Loyalty Oaths.” U. Mich. JL Reform 7: 637.</a><br><a href=\\\"https://www.goodreads.com/book/show/1512652.An_Assassin_s_Diary?ref=nav_sb_ss_1_19\\\" target=\\\"_blank\\\">Bremer, Arthur H. 1973. An Assassin’s Diary. HarperCollins Publishers.</a><br><br><h4 style=\\\"margin-top: 1.7em;\\\">Final Thoughts</h4>Thank you for playing our mod! We hope you found it educational and fun to play, and didn't mind all the writing.<br>If you have feedback or just want to talk then you can PM me on Discord (RouteVenus#1791) or on Reddit (u/Laika0405)<br>This was a lot of fun to write, and I think we all did a pretty good job. I'm especially proud of my music choices and the graphics I made for it.<br> I want to thank Ettingermentum for being probably the best playtester I could ask for lol.</div>",
+        "has_visits": 0,
+        "no_electoral_majority_image": "/static/images/2012-no-majority.jpg",
+		    "site_image": "https://jetsimon.com/cts-media/public/1972d_init_0.png",
+	      "site_description": "The dawn of the new millennium brings about an election for a new president. Democrat Hamilton Hill and Republican Wayne Eden are campaigning to be the next major party president, while newcomer to the political scene, beloved billionaire philanthropist Alexander Joseph Luthor, seeks to become the first third party president in more than a century."
+    }
+  }, ]
+  campaignTrail_temp.candidate_json = [{
+    "model": "campaign_trail.candidate",
+    "pk": 77,
+    "fields": {
+        "first_name": "Clark",
+        "last_name": "Kent",
+        "election": 10,
+        "party": "<i>The Daily Planet</i>",
+        "state": "Smallville, Kansas",
+        "priority": 1,
+        "description": "<p>Mild-mannered reporter Clark Kent is a diligent reporter working at Metropolis’s leading newspaper, <i>The Daily Planet</i>. Unremarkable, yet a brilliant and astute writer, Kent has yet to escape the large shadow posed by that of Lois Lane, the <i>Planet’s</i> lead journalist and the love of his life. Perry White, the <i>Planet’s</i> editor-in-chief, will need some convincing by Kent if he wants a shot at covering Luthor’s upcoming presidential campaign.<br><br>Raised in Smallville, Kansas, by smalltown farmers, Jonathan and Martha Kent, Kent is something of a bumbling oaf. Corn-fed, clumsy, bumbling, near-sighted, if he had just a semblance of presence, Kent could really be something, but he blends in among the crowd. Just a face out of many. He’s just a man, and he wouldn’t have it any other way. But something abounds, a lingering danger, and a threat to millions of innocents is waiting to make itself known. This looks like a job for . . .<br><button onclick='next3()'>INFO: The Origins of Superman</button></p>",
+        "color_hex": "#680600",
+        "secondary_color_hex": "#66201C",
+        "is_active": 1,
+        "image_url": "https://i.imgur.com/1YPMBCZ.jpeg",
+        "electoral_victory_message": "<h3>Congratulations! You have won the 1972 Presidential Election.</h3><p>Wow! This is the biggest political upset since Truman beat Dewey. It looked like your campaign was a hopeless joke, but what a comeback! You'll face stiff opposition to your policies from both parties, but clearly the country was at your side. Your victory speech was in front of an ecstatic crowd in South Dakota, and everyone could see the tears in your eyes. This is an astounding victory that political analysts will be studying for decades to come, and the climax of a chaotic past few years. This has completely shaken up the way the Democratic Party operates, and the next four years will be incredibly interesting to watch. Good luck with Vietnam, and here's to you. America came home.</p>",
+        "electoral_loss_message": "<h3>Sorry, you have lost the 1972 Presidential Election.</h3><p>It's hard to say this was unexpected, as you were always going to have a hard time beating President Nixon after the economic recovery over the past year.<p><p>Additionally, nobody knows where this leaves the Democratic Party after such a divisive primary and a huge lack of support from major Democrats in the general election. The party stands at a crossroads. The Republicans were able to not only turn around their devastating loss in 1964, but in fact fully embraced Goldwater's brand of conservatism to reap two major wins in a row. The Democrats may be able to do the same in 1976 and even 1980, if you put in a good fight with this election. Or, they could nominate a more right-leaning centrist candidate, in hopes of placating moderates. In any event, you can always go back to the senate. Hopefully Nixon stays true to his promise of bringing peace with honor, and can leave the White House with dignity in four years.</p>",
+        "no_electoral_majority_message": "<h3>Wow! You have won in a squeaker.</h3><p>While the Electoral College ended in a tie, the Democrats have a large advantage in the House of Representatives and will likely elect you in that manner. However you may have to make some concessions if the vote ends up being close.</p>",
+        "description_as_running_mate": "''",
+        "candidate_score": 1
+    }
+  }, {
+    "model": "campaign_trail.candidate",
+    "pk": 78,
+    "fields": {
+        "first_name": "Lex",
+        "last_name": "Luthor",
+        "election": 10,
+        "party": "Tomorrow",
+        "state": "Delaware",
+        "priority": 3,
+        "description": "''",
+        "color_hex": "#043B12",
+        "secondary_color_hex": " #266637",
+        "is_active": 0,
+        "image_url": "''",
+        "electoral_victory_message": "''",
+        "electoral_loss_message": "''",
+        "no_electoral_majority_message": "''",
+        "description_as_running_mate": "''",
+        "candidate_score": 1
+    }
+  }, {
+    "model": "campaign_trail.candidate",
+    "pk": 79,
+    "fields": {
+        "first_name": "Hamilton",
+        "last_name": "Hill",
+        "election": 10,
+        "party": "Democratic",
+        "state": "New Jersey",
+        "priority": 3,
+        "description": "''",
+        "color_hex": "#083B59",
+        "secondary_color_hex": " #2776A3",
+        "is_active": 0,
+        "image_url": "''",
+        "electoral_victory_message": "''",
+        "electoral_loss_message": "''",
+        "no_electoral_majority_message": "''",
+        "description_as_running_mate": "''",
+        "candidate_score": 1
+    }
+  }, {
+    "model": "campaign_trail.candidate",
+    "pk": 80,
+    "fields": {
+        "first_name": "Wayne",
+        "last_name": "Eden",
+        "election": 10,
+        "party": "Republican",
+        "state": "Virginia",
+        "priority": 4,
+        "description": "''",
+        "color_hex": "#780817",
+        "secondary_color_hex": "#B83042",
+        "is_active": 0,
+        "image_url": "''",
+        "electoral_victory_message": "''",
+        "electoral_loss_message": "''",
+        "no_electoral_majority_message": "''",
+        "description_as_running_mate": "''",
+        "candidate_score": 1
+    }
+  }, {
+    "model": "campaign_trail.candidate",
+    "pk": 81,
+    "fields": {
+        "first_name": "Kal",
+        "last_name": "El",
+        "election": 10,
+        "party": "Truth, Justice, and the American Way",
+        "state": "Krypton",
+        "priority": 5,
+        "description": "''",
+        "color_hex": "#0000FF",
+        "secondary_color_hex": "#90C0FF",
+        "is_active": 0,
+        "image_url": "https://i.imgur.com/Jl4kzXI.jpeg",
+        "electoral_victory_message": "''",
+        "electoral_loss_message": "''",
+        "no_electoral_majority_message": "''",
+        "description_as_running_mate": "<p><i>Superman!</i> Faster than a speeding bullet, more powerful than a locomotive, able to leap tall buildings in a single bound! The infant of Krypton is now the Man of Steel! Engaged in a never-ending battle for truth and justice, Superman is the sworn defender of Earth and her people. In his public persona, Superman serves as a symbol of hope and virtue. In his immeasurable physical strength and speed, nobody is below him or beyond saving, and his greatest power is the good within him.</p><p>Luthor feels otherwise about the blue boy scout. Feeling belittled by the presence of this alien immigrant, Luthor decries him, forewarning of a humanity dependent on the kindness of a god. If it weren’t for Superman, he’d be mankind’s shepherd. He’d be the maker of their destiny. He can’t allow the Kryptonian to prosper for much longer, once he becomes president, he will eliminate Superman, and Luthor will reign supreme.</p>",
+        "candidate_score": 0
+    }
+    }]
+    campaignTrail_temp.running_mate_json = [{
+      "model": "campaign_trail.running_mate",
+      "pk": 58,
+      "fields": {
+          "candidate": 77,
+          "running_mate": 81
+      }
+  }]
+  
+  campaignTrail_temp.opponents_default_json = JSON.parse("[{\"election\": 10, \"candidates\": [77, 78, 79, 80]}]");
+  campaignTrail_temp.opponents_weighted_json = JSON.parse("[{\"election\": 10, \"candidates\": [77, 78, 79, 80]}]");
+  campaignTrail_temp.difficulty_level_json = JSON.parse("[{\"model\": \"campaign_trail.difficulty_level\", \"pk\": 3, \"fields\": {\"name\": \"Normal\", \"multiplier\": 0.97}}]");
+  campaignTrail_temp.global_parameter_json = JSON.parse("[{\"model\": \"campaign_trail.global_parameter\", \"pk\": 1, \"fields\": {\"vote_variable\": 1.125, \"max_swing\": 0.12, \"start_point\": 0.94, \"candidate_issue_weight\": 10.0, \"running_mate_issue_weight\": 3.0, \"issue_stance_1_max\": -0.71, \"issue_stance_2_max\": -0.3, \"issue_stance_3_max\": -0.125, \"issue_stance_4_max\": 0.125, \"issue_stance_5_max\": 0.3, \"issue_stance_6_max\": 0.71, \"global_variance\": 0.01, \"state_variance\": 0.005, \"question_count\": 50, \"default_map_color_hex\": \"#C9C9C9\", \"no_state_map_color_hex\": \"#999999\"}}]");
+  campaignTrail_temp.candidate_dropout_json = JSON.parse("[{\"model\": \"campaign_trail.candidate_dropout\", \"pk\": 1, \"fields\": {\"candidate\": 36, \"affected_candidate\": 18, \"probability\": 1.0}}]");
+  campaignTrail_temp.temp_election_list = [{
+    "id": 10,
+    "year": 2000,
+    "is_premium": 0,
+    "display_year": "Luthor 2000"
+  }];
+  
+  campaignTrail_temp.difficulty_level_json = JSON.parse("[{\"model\": \"campaign_trail.difficulty_level\", \"pk\": 4, \"fields\": {\"name\": \"Normal\", \"multiplier\": 0.97}}]");
+  
+  nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#6b6b6b"
+  nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#000000"
+  $(".container")[0].style.backgroundColor = "#6b6b6b"
+  $("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/hlj1naZ.jpeg)"
+  $("#game_window")[0].style.borderColor = "#454545"
+  $("#game_window")[0].style.coloring_window = "#454545"
+  quotes = ["There's a sucker born every minute."]
+	customquote = quotes[Math.floor((Math.random() * quotes.length))]
+  corrr=`\n<h2>LUTHOR 2000</h2><font id='wittyquote' size='4' color='white'><em>`+customquote+`</em></font>`
+  document.body.background = "https://i.imgur.com/0zS3h71.jpeg"
+  document.getElementById("header").src = "https://i.imgur.com/BWs4SLb.jpeg"
+  document.getElementById("wittyquote").color = "white"
+  nct_stuff.themes[nct_stuff.selectedTheme].text_col = "white"
+  
+  function changeFontColour() {
+    if (document.getElementById('final_results_description') != null) {
+        document.getElementById('final_results_description').style.color = "white"
+    }
+  }
+  
+  
+  $("#game_start").click((event) => {
+    event.preventDefault();
+    $("#election_id_button").click((event) => {
+        event.preventDefault();
+        nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#07b2f0"
+        nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#facf23"
+        $(".container")[0].style.backgroundColor = "#f00707"
+        $("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/2wQSIaB.jpeg)"
+        $("#game_window")[0].style.borderColor = "#4A4A2B"
+        $("#game_window")[0].style.coloring_window = "#4A4A2B"
+        quotes = ["The only thing necessary for the triumph of evil is for good men to do nothing."]
+        customquote = quotes[Math.floor((Math.random() * quotes.length))]
+        corrr = `\n<h2><i>THE ADVENTURES OF SUPERMAN</i></h2><font id='wittyquote' size='4' color='FFFFFF'><em>` + customquote + `</em></font>`
+        document.body.background = "https://i.imgur.com/8waVvMk.jpeg"
+        document.getElementById("header").src = "https://i.imgur.com/DO7PkCa.jpeg"
+        nct_stuff.themes[nct_stuff.selectedTheme].text_col = "white"
+        musicMode()
+        e.election_json[0].fields.summary = "<div style='overflow-y:scroll;height:200px;'><p>LUTHOR: This isn't just a rock, Ms. Vaughn. It's something much more, I've yet to run the proper tests but I think it'll help me win this damn election.</p><p>JENNY: This rock?<p>LUTHOR: Yes, <i>this rock</i>, now drop it or I'll drop you.<p></p>JENNY: Uh, oh, yes, urm, Mr. Luthor, my apologies...why don't you like Superman, Mr. Luthor, sir? He's one of those metahumans you don't like, right?<p></p>LUTHOR: You're a primate, Ms. Vaughn. It's not entirely your fault. People like Superman, the speedster in Keystone, their existence...it all goes back to Darwin's law, you see. Every moron stymied in the evolutionary process by modern society's coddling has been fooled by his act. If I weren't here, Ms. Vaughn, the monkeys like you would be their slaves.<p></p>JENNY: Oh.<p></p>LUTHOR: Lucky for you, for everyone, that you <i>do</i> have me, isn't that right, Ms. Vaughn?<p></p>JENNY: Yes, Mr. Luthor, sir.<p></p>LUTHOR: I fancy myself something of a humanitarian, I <i>care</i>.<p></p>JENNY: Of course, Mr. Luthor, sir.<p></p>LUTHOR: Soon enough they'll know, they'll know I'm the hero of this story. They'll realize that Lex Luthor is their savior, I...damnit, drop that!<p></p>JENNY: I'm so sorry, Mr. Luthor! I just saw this button-thingy, I was just looking and I uh...<p></p>LUTHOR: Give it here, baboon, before you ruin everything. This, this here, think of it as a Plan B. I don't like losing, Ms. Vaughn, nobody should ever want to see what my Plan B looks like. <i>Ever.</i></p>"
+        e.election_json[0].fields.image_url = "https://i.imgur.com/mlddDyq.jpeg"
+        setInterval(changeFontColour, 200)
+  
+    })
+  })
+  
+  next3 = function() {
+    text = "The character of Superman was created by Jerry Siegel and Joe Schuster in 1938, first appearing in Action Comics #1. Siegel and Schuster originally developed the character back in 1933, hoping to sell the character as a syndicated newspaper comic-strip. The first iteration featured Superman as an evil, bald man granted powers by a mad scientist in a short story titled \"The Reign of the Superman.\" The two later decided upon a much more novel idea, of turning the Superman character into a force for good, in the vein of such mythological and pulp heroes as John Carter of Mars, Tarzan, Heracles, among others.<br><br>Considered the first comic book superhero, Superman has continued to be a pop culture icon into the modern day.<br><br><br><button onclick='back3()'>Back</button>"
+    document.getElementById("candidate_summary").children[1].innerHTML = text
+  }
+  back3 = function() {
+    text = "<p>Mild-mannered reporter Clark Kent is a diligent reporter working at Metropolis’s leading newspaper, <i>The Daily Planet</i>. Unremarkable, yet a brilliant and astute writer, Kent has yet to escape the large shadow posed by that of Lois Lane, the <i>Planet’s</i> lead journalist and the love of his life. Perry White, the <i>Planet’s</i> editor-in-chief, will need some convincing by Kent if he wants a shot at covering Luthor’s upcoming presidential campaign.<br><br>Raised in Smallville, Kansas, by smalltown farmers, Jonathan and Martha Kent, Kent is something of a bumbling oaf. Corn-fed, clumsy, bumbling, near-sighted, if he had just a semblance of presence, Kent could really be something, but he blends in among the crowd. Just a face out of many. He’s just a man, and he wouldn’t have it any other way. But something abounds, a lingering danger, and a threat to millions of innocents is waiting to make itself known. This looks like a job for . . .<br><button onclick='next3()'>INFO: The Origins of Superman</button></p>"
+    document.getElementById("candidate_summary").children[1].innerHTML = text
+  }
+
+  function addDynamicCSS() {
+    var css = `
+        .inner_window_question h3 .mytooltip{
+            background-color: lightskyblue;
+        }
+
+        .mytooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            background-color: lightblue;
+        }
+
+        .mytooltip .mytooltiptext {
+            width: 240px;
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 99;
+            bottom: 20%;
+            left: 20%;
+            margin-left: -90px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: 1px solid black;
+            pointer-events: none;
+            font-size: 13px !important;
+            line-height: 1.5em !important;
+            font-weight: normal !important;
+            font-style: normal !important;
+        }
+
+        .mytooltip .mytooltiptext img {
+            max-width: 240px;
+            height: auto;
+        }
+
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+    `;
+
+    var styleElem = document.createElement('style');
+    styleElem.type = 'text/css';
+    
+    styleElem.appendChild(document.createTextNode(css));
+    
+    document.head.appendChild(styleElem);
+}
+
+
+addDynamicCSS();
+
+  tooltipList = [
+    {searchString: "Bruce", explanationText: "<img src=https://i.imgur.com/37ddcYG.jpeg> A caped crusader."},
+    {searchString: "Metallo", explanationText: "<img src=https://i.imgur.com/12zDkCy.jpeg> The alias of a cyborg formerly known as John Corben."},
+    {searchString: "Toyman", explanationText: "<img src=https://i.imgur.com/WwYCaYS.jpeg> A deranged recluse known for his affinity for playthings."},
+    {searchString: "Livewire", explanationText: "<img src=https://i.imgur.com/0FGZ3Z5.jpeg> The villainous persona of former shock jock, Leslie Willis."},
+    {searchString: "Mr. Mxyzptlk", explanationText: "<img src=https://i.imgur.com/BS3Jyu3.jpeg> A devious visitor from the fifth dimension."},
+    {searchString: "Parasite", explanationText: "<img src=https://i.imgur.com/qRwydUK.jpeg> Formerly known as Rudy Jones. A craven mutation who feasts on the energy of others."},
+    {searchString: "Bizarro", explanationText: "<img src=https://i.imgur.com/fkeSZSg.jpeg> The reverse Superman."},
+    {searchString: "Krypton", explanationText: "<img src=https://i.imgur.com/VD7PtyL.jpeg> Doomed planet."},
+    {searchString: "Htrae", explanationText: "<img src=https://i.imgur.com/suIEQze.jpeg> Just a bit off from our world."},
+    {searchString: "Lois Lane", explanationText: "<img src=https://i.imgur.com/yDv0UMB.jpeg> The best damn reporter <i>The Daily Planet</i> has ever seen."},
+    {searchString: "Lois", explanationText: "<img src=https://i.imgur.com/yDv0UMB.jpeg> The best reporter <i>The Daily Planet</i> has ever seen."},
+    {searchString: "Jimmy Olsen", explanationText: "<img src=https://i.imgur.com/4O47WfS.jpeg> Superman's pal."},
+    {searchString: "Jimmy", explanationText: "<img src=https://i.imgur.com/4O47WfS.jpeg> Superman's pal."},
+    {searchString: "Perry White", explanationText: "<img src=https://i.imgur.com/inbRaOF.jpeg> Don't call him chief."},
+    {searchString: "Fortress of Solitude", explanationText: "<img src=https://i.imgur.com/rz6VkuP.jpeg> A home away from home."},
+    {searchString: "Pete Ross", explanationText: "<img src=https://i.imgur.com/ex97pqx.jpeg> A wayward friend."},
+    {searchString: "Pete", explanationText: "<img src=https://i.imgur.com/ex97pqx.jpeg> A wayward friend."},
+    {searchString: "Father", explanationText: "<img src=https://i.imgur.com/0T1F18C.jpeg> Jor-El."}
+          
+  ];
+
+RecReading = true
+  
+campaignTrail_temp.credits = "Accurate_Feature9970<br>JetSimon - Code 2 Mod Maker Tool<br>Nina - Tooltip and Advice Feature<br>DecStar - Music Player";
+  
+    HistHexcolour=["#2E2F68","#CA0120","#266637"];
+    HistName=["Hamilton Hill","Wayne Eden","Lex Luthor"];
+    HistEV=[406,129,0];
+    HistPV=["39,936,375	","33,817,273","2,906,305"];
+    HistPVP=["51.9%","43.9%","3.8%"];
+  // MUSIC MODE
+  
+  musicMode = () => {
+    // Initialise custom music
+  
+    $("#music_player")[0].children[0].style.display = "none"
+    $("#music_player")[0].children[1].style.display = "none"
+  
+    document.getElementById("modLoadReveal").style.display = "none"
+    document.getElementById("modloaddiv").style.display = "none"
+  
+    musicBox = document.getElementById("music_player")
+    musicBox.style.display = ""
+  
+    var trackSel;
+    e = campaignTrail_temp
+    e.selectedSoundtrack = 0
+  
+    toTime = (seconds) => {
+        var date = new Date(null);
+        date.setSeconds(seconds);
+        return date.toISOString().substr(11, 8);
+    }
+  
+    generateTime = () => {
+        // Get the audio element
+        var audio = document.getElementById("campaigntrailmusic");
+  
+        timeTracker = document.createElement("div");
+        timeTracker.style = `
+  text-align:left;
+  border-style:solid;
+  border-width:3px;
+  height:150px;
+  width:200px;
+  background-color:#07b2f0;
+  float:right;
+  padding: 10px;
+  `
+        $("#trackSelParent")[0].prepend(timeTracker);
+        $("#trackSelParent")[0].prepend(document.createElement("br"));
+  
+        // Create a new element to display the current position of the audio
+        var positionDisplay = document.createElement("gg");
+        positionDisplay.id = "position-display";
+  
+        // Create a new slider element to change the time
+        var timeSlider = document.createElement("input");
+        timeSlider.type = "range";
+        timeSlider.min = 0;
+        timeSlider.max = 1;
+        timeSlider.step = 0.001;
+        timeSlider.value = 0;
+        timeSlider.style.width = "200px";
+        timeSlider.id = "time-slider";
+  
+        var pausePlay = document.createElement("button");
+        pausePlay.id = "position-display";
+        pausePlay.innerHTML = "<b>Pause</b>"
+        pausePlay.style.width = "100%";
+  
+  
+        pausePlay.addEventListener("click", event => {
+            event.preventDefault();
+            updatePositionDisplay();
+            let audio = document.getElementById("campaigntrailmusic");
+            if (audio.paused) {
+                audio.play();
+                event.target.innerHTML = "<b>Pause</b>";
+                return;
+            }
+            audio.pause();
+            event.target.innerHTML = "<b>Play</b>";
+            return;
+        })
+  
+        var volumeLabel = document.createElement("gg");
+        volumeLabel.id = "volume-label";
+        volumeLabel.innerHTML = "<br><b>Volume: </b>"
+  
+        var volumeSlider = document.createElement("input");
+        volumeSlider.type = "range";
+        volumeSlider.min = 0;
+        volumeSlider.max = 1;
+        volumeSlider.step = 0.001;
+        volumeSlider.value = 0;
+        volumeSlider.style.width = "200px";
+        volumeSlider.id = "volume-slider";
+  
+        volumeSlider.value = audio.volume;
+  
+        timeTracker.appendChild(pausePlay);
+        timeTracker.appendChild(document.createElement("br"));
+        timeTracker.appendChild(document.createElement("br"));
+        timeTracker.appendChild(positionDisplay);
+        timeTracker.appendChild(timeSlider);
+        timeTracker.appendChild(volumeLabel);
+        timeTracker.appendChild(volumeSlider);
+  
+        updatePositionDisplay();
+  
+        //for (let i = 0; i < 10; i++)
+        //timeTracker.append(document.createElement("br"));
+  
+  
+        // Function to update the position display
+        function updatePositionDisplay() {
+            positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+            timeSlider.value = audio.duration ? audio.currentTime / audio.duration : 0;
+        }
+  
+        // Function to change the time of the audio
+        function changeTime() {
+            positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+            audio.currentTime = timeSlider.value * audio.duration;
+        }
+  
+        updateVolume = event => {
+            audio.volume = event.target.value;
+        }
+  
+        // Update the position display and slider every second
+        setInterval(updatePositionDisplay, 1000);
+  
+        // Listen for changes to the time slider and change the time of the audio
+        timeSlider.addEventListener("input", changeTime);
+        volumeSlider.addEventListener("input", updateVolume)
+    }
+  
+    function newMusicPlayer() {
+        trackSel = document.createElement("div");
+        trackSel.id = "trackSelParent"
+        let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#07b2f0;float:right;">`
+        z += `<b><select id='selectSoundtrack'><option value='` + soundtracks[e.selectedSoundtrack].name + `'>` + soundtracks[e.selectedSoundtrack].name + "</option>"
+        for (i in soundtracks) {
+            if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
+                z += `<option value='` + soundtracks[i].name + `'>` + soundtracks[i].name + `</option>`
+            }
+        }
+        z += `</select></b><br><br>`
+            // <label><input type="radio" name="option" value="option1">Option 1</label><br>
+        for (i in soundtracks[e.selectedSoundtrack].tracklist) {
+            let a = soundtracks[e.selectedSoundtrack].tracklist[i]
+            let b = `<label><input class="trackSelector" type="radio" name="trackSelector" value="` + i + `">` + a.name + `</label><br>`
+            z += b
+        }
+        z += "</div><br><br>"
+        trackSel.innerHTML = z
+  
+        // select correct song
+  
+        musicBox.appendChild(trackSel);
+        Array.from(document.getElementById("trackSel").children).filter(f => {
+            return f.tagName == "LABEL"
+        }).map(f => f.children[0])[0].checked = true
+  
+        // set soundtrack changer
+  
+        soundtrackSelector = document.getElementById("selectSoundtrack")
+        soundtrackSelector.onchange = function() {
+            for (i in soundtracks) {
+                if (soundtracks[i].name == soundtrackSelector.value) {
+                    e.selectedSoundtrack = i
+                    break
+                }
+            }
+            document.getElementById("trackSelParent").remove()
+            newMusicPlayer()
+        }
+  
+        var matches = document.querySelectorAll('.trackSelector');
+  
+        for (match in matches) {
+            matches[match].onchange = function() {
+                audio = $("#campaigntrailmusic")[0];
+                audio.src = soundtracks[e.selectedSoundtrack].tracklist[this.value].url
+                audio.currentTime = 0
+            }
+        }
+  
+        musicBox.children[2].loop = false
+        musicBox.children[2].src = soundtracks[e.selectedSoundtrack].tracklist[0].url
+  
+        musicBox.children[2].onended = function() {
+            console.log("next track")
+            let selected = Number(document.querySelector('input[name="trackSelector"]:checked').value);
+            let newSel = clamp(selected + 1, soundtracks[e.selectedSoundtrack].tracklist.length - 1, 0)
+            let buttons = Array.from(document.getElementById("trackSel").children).filter(f => {
+                    return f.tagName == "LABEL"
+                }).map(f => f.children[0])
+                //let selectedIndex = buttons.map(f=>f.children[0]).map(f=>f.checked)
+            buttons[newSel].click()
+        }
+  
+        for (w = 0; w < 7; w++) {
+            document.getElementById("trackSelParent").appendChild(document.createElement("br"))
+        }
+  
+        generateTime();
+    }
+  
+    clamp = function(a, max, min, overflow = true) {
+        if (overflow) {
+            return a > max ? min : a < min ? max : a;
+        }
+        return a > max ? max : a < min ? min : a;
+    }
+  
+  
+    // Track list
+
+    var soundtracks = {
+      0: {
+          name: "Opening",
+          tracklist: [
+            {
+            "name": "The Adventures of Superman (Opening Narration) - Leon Klatzkin",
+            "url": "https://file.garden/ZcCx6xqH9DEExFnK/Adventures%20of%20Superman%20-%20Leon%20Klatzkin.mp3"
+          },
+        ]
+      },
+      1: {
+          name: "Contemporary Tracks",
+          tracklist: [
+            {
+            "name": "Superman - R.E.M.",
+            "url": "https://file.garden/ZcAsLRqH9DEExFPs/Superman%20-%20R.E.M..mp3"
+          },
+          {
+            "name": "Waiting for Superman - Daughtry",
+            "url": "https://file.garden/ZcCx6xqH9DEExFnK/Waiting%20for%20Superman%20-%20Daughtry.mp3"
+          },
+          {
+            "name": "It's Not Easy (Superman) - Five for Fighting",
+            "url": "https://file.garden/ZcAsLRqH9DEExFPs/It's%20Not%20Easy%20(Superman)%20-%20Five%20for%20Fighting.mp3"
+          },
+          {
+            "name": "Save Me - Remy Zero (Smallville Theme)",
+            "url": "https://file.garden/ZcAsLRqH9DEExFPs/Save%20Me%20-%20Remy%20Zero.mp3"
+          }
+        ]
+      },
+      2: {
+        name: "Orchestral Arrangements",
+        tracklist: [
+          {
+            "name": "Krypton Theme - John Williams (Superman: The Movie)",
+            "url": "https://file.garden/ZcAsLRqH9DEExFPs/Krypton%20Theme.mp3"
+          },
+          {
+            "name": "Main Title March - Ken Thorne, John Williams (Superman II)",
+            "url": "https://file.garden/ZcCx6xqH9DEExFnK/02%20Main%20Title%20March.mp3"
+          },
+          {
+            "name": "Main Title Theme - Jay Gruska (Lois & Clark: The New Adventures of Superman)",
+            "url": "https://file.garden/ZcCx6xqH9DEExFnK/Lois%20%26%20Clark%20-%20Jay%20Gruska.mp3"
+          },
+          {
+            "name": "Flight - Hans Zimmer (Man of Steel)",
+            "url": "https://file.garden/ZcAsLRqH9DEExFPs/Flight.mp3"
+          },
+          {
+            "name": "Who I Was Meant to Be - Dan Romer (Superman & Lois)",
+            "url": "https://file.garden/ZcCx6xqH9DEExFnK/Who%20I%20Was%20Meant%20to%20Be%20-%20Dan%20Romer.mp3"
+          }
+      ]
+    }
+  }
+  
+    // Set up new music player
+  
+    newMusicPlayer()
+  }
+
+}
