@@ -577,7 +577,8 @@ campaignTrail_temp.answers_json = [
         "pk": 3325,
         "fields": {
             "question": 346,
-            "description": "You know, I'm possibly violating my journalistic principles in saying this, but - *you flip over your lapel to reveal your Lex 2000 campaign button* - it's an honor meeting you, sir."
+            "description": "You know, I'm possibly violating my journalistic principles in saying this, but - *you flip over your lapel to reveal your Lex 2000 campaign button* - it's an honor meeting you, sir.",
+            "condition": "button == 'have'"
         }
     },
     {
@@ -28253,6 +28254,8 @@ document.head.appendChild(customStyling);
 
 campaignTrail_temp.cyoa = true
 
+let button = "";
+
 var pete = 0;
 var hope = 0;
 var jouro = 0;
@@ -28271,14 +28274,21 @@ var journoMap = {
     3493: 1,
     3496: 1,
     3406: 1,
-    3394: 1,
+    3394: -1,
     3321: 1,
     }
 
 cyoAdventure = function(a) {
     ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
 
-  if (ans == 3393 || ans == 3394 || ans == 3395) {
+    if (ans == 3394){
+        button = "have";
+    }
+    else if (ans == 3393 || 3395){
+        button = "none";
+    }
+
+    if (ans == 3393 || ans == 3394 || ans == 3395) {
         nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#6b6b6b" 
 	    nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#000000" 
         $(".container")[0].style.backgroundColor = "#6b6b6b";
@@ -28310,7 +28320,7 @@ cyoAdventure = function(a) {
         `;
         document.head.appendChild(customStyling);
     }
-if (ans == 3310 || ans == 3311 || ans == 3312 || ans == 3313) {
+    if (ans == 3310 || ans == 3311 || ans == 3312 || ans == 3313) {
         nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#07b2f0"
         nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#facf23"
         $(".container")[0].style.backgroundColor = "#f00707"
@@ -28342,7 +28352,7 @@ if (ans == 3310 || ans == 3311 || ans == 3312 || ans == 3313) {
         }
         `;
         document.head.appendChild(customStyling);
-}
+    }
 }
 
 function getTooltips(str) {
@@ -28406,6 +28416,30 @@ function applyTooltipsToObject(obj) {
 applyTooltipsToObject(campaignTrail_temp.questions_json);
 applyTooltipsToObject(campaignTrail_temp.answers_json);
 applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
+
+let gameWindowNode = document.getElementById("game_window");
+let questionConfig = { attributes: true, childList: true, subtree: true };
+
+function updateQuestions(mutationList, observer) {
+    const answers = document.getElementsByClassName("game_answers");
+    
+    for (let i = 0; i < answers.length; i++) {
+    const answer = answers[i];
+    if (answer.classList.contains("done")) {
+    continue;
+    }
+    answer.classList.add("done");
+    
+    let answerObject = campaignTrail_temp.answers_json.filter((x) => x.pk == answer.value)[0];
+    
+    if (answerObject.fields.condition != null) {
+    answer.disabled = !(eval(answerObject.fields.condition));
+    }
+    }
+}
+    
+const questionObserver = new MutationObserver(updateQuestions);
+questionObserver.observe(gameWindowNode, questionConfig);
 
 campaignTrail_temp.multiple_endings=true
 endingPicker = (out, totv, aa, quickstats) => {
