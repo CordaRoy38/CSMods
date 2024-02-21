@@ -184,7 +184,7 @@ campaignTrail_temp.election_json = [{
         customquote = quotes[Math.floor((Math.random() * quotes.length))]
         corrr = `\n<h2><i>THE ADVENTURES OF SUPERMAN</i></h2><font id='wittyquote' size='4' color='FFFFFF'><em>` + customquote + `</em></font>`
         document.body.background = "https://i.imgur.com/8waVvMk.jpeg"
-        document.getElementById("header").src = "https://i.imgur.com/DO7PkCa.jpeg"
+        document.getElementById("header").src = "https://i.imgur.com/ugcm0sP.jpeg"
         nct_stuff.themes[nct_stuff.selectedTheme].text_col = "white"
         musicMode()
         e.election_json[0].fields.summary = "<div style='overflow-y:scroll;height:200px;'><p>LUTHOR: This isn't just a rock, Ms. Vaughn. It's something much more, I've yet to run the proper tests but I think it'll help me win this damn election.</p><p>JENNY: This rock?<p>LUTHOR: Yes, <i>this rock</i>, now drop it or I'll drop you.<p></p>JENNY: Uh, oh, yes, urm, Mr. Luthor, my apologies...why don't you like Superman, Mr. Luthor, sir? He's one of those metahumans you don't like, right?<p></p>LUTHOR: You're a primate, Ms. Vaughn. It's not entirely your fault. People like Superman, the speedster in Keystone, their existence...it all goes back to Darwin's law, you see. Every moron stymied in the evolutionary process by modern society's coddling has been fooled by his act. If I weren't here, Ms. Vaughn, the monkeys like you would be their slaves.<p></p>JENNY: Oh.<p></p>LUTHOR: Lucky for you, for everyone, that you <i>do</i> have me, isn't that right, Ms. Vaughn?<p></p>JENNY: Yes, Mr. Luthor, sir.<p></p>LUTHOR: I fancy myself something of a humanitarian, I <i>care</i>.<p></p>JENNY: Of course, Mr. Luthor, sir.<p></p>LUTHOR: Soon enough they'll know, they'll know I'm the hero of this story. They'll realize that Lex Luthor is their savior, I...damnit, drop that!<p></p>JENNY: I'm so sorry, Mr. Luthor! I just saw this button-thingy, I was just looking and I uh...<p></p>LUTHOR: Give it here, baboon, before you ruin everything. This, this here, think of it as a Plan B. I don't like losing, Ms. Vaughn, nobody should ever want to see what my Plan B looks like. <i>Ever.</i></p>"
@@ -270,14 +270,11 @@ addDynamicCSS();
     {searchString: "Bizarro", explanationText: "<img src=https://i.imgur.com/fkeSZSg.jpeg> The reverse Superman."},
     {searchString: "Krypton", explanationText: "<img src=https://i.imgur.com/VD7PtyL.jpeg> Doomed planet."},
     {searchString: "Htrae", explanationText: "<img src=https://i.imgur.com/suIEQze.jpeg> Just a bit off from our world."},
-    {searchString: "Lois Lane", explanationText: "<img src=https://i.imgur.com/yDv0UMB.jpeg> The best damn reporter <i>The Daily Planet</i> has ever seen."},
     {searchString: "Lois", explanationText: "<img src=https://i.imgur.com/yDv0UMB.jpeg> The best reporter <i>The Daily Planet</i> has ever seen."},
-    {searchString: "Jimmy Olsen", explanationText: "<img src=https://i.imgur.com/4O47WfS.jpeg> Superman's pal."},
     {searchString: "Jimmy", explanationText: "<img src=https://i.imgur.com/4O47WfS.jpeg> Superman's pal."},
     {searchString: "Perry White", explanationText: "<img src=https://i.imgur.com/inbRaOF.jpeg> Don't call him chief."},
     {searchString: "Fortress of Solitude", explanationText: "<img src=https://i.imgur.com/rz6VkuP.jpeg> A home away from home."},
     {searchString: "Pete Ross", explanationText: "<img src=https://i.imgur.com/ex97pqx.jpeg> A wayward friend."},
-    {searchString: "Pete", explanationText: "<img src=https://i.imgur.com/ex97pqx.jpeg> A wayward friend."},
     {searchString: "Father", explanationText: "<img src=https://i.imgur.com/0T1F18C.jpeg> Jor-El."}
           
   ];
