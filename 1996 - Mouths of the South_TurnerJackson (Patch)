@@ -1,3 +1,4 @@
+
 let e = campaignTrail_temp;
 
 function ctsAchievement(achievement, difficultyChecker = true){
@@ -16782,15 +16783,16 @@ e.header = "<h1>Error-Handling Message (oops)</h1>";
         }
 
         if (maverick == 0){
-        if (e.player_answers.includes(3541)){
-            e.pages.push(`<h2><q><i>PRESIDENT-ELECT GINGRICH MEETS WITH PRESIDENT BUSH, ANNOUNCES FIRST PICKS FOR CABINET</i></q></h2>
-                    <br><br>President-elect Newt Gingrich made his trek to Washington today, meeting with incumbent President George Bush as is custom following presidential elections. They spoke for an hour before taking some questions in the Oval Office, with Gingrich mainly taking control of the situation and answering various reporters' inquiries on several key issues such as abortion, healthcare, gay marriage and foreign relations. He rejected every question asked pertaining to his ongoing divorce from his estranged wife, Marianne Gingrich, or concerning his mistress, Republican congressional staffer Callista Bisek.<br><br>Afterward, Gingrich made his way to a nearby pre-scheduled press conference as part of his transition into the presidency, where he updated the press corps on the plan for his upcoming cabinet. He announced the first set of names that'll be promoted to notable positions, including:<br><br>
-                    <p><center>Elizabeth Dole for Secretary of State (wife to Republican Senator Bob Dole and formerly Secretary of Labor under President Bush from 1989 to 1990)</center></p>
-                    <p><center>George W. Bush for Secretary of Agriculture (son to President Bush and former unsuccessful Republican nominee for governor of Texas in 1994</center></p>
-                    <p><center>Steve Gunderson for Chief of Staff (Wisconsin representative from the 3rd congressional district since 1981)</center></p>
-                    <br><br>Mr. Bush and Senator Dole, in attendance in place of his wife, were present to take questions. The announcement of Gunderson in particular drew immediate attention, as the congressman not only was exposed as a homosexual by California Represenative Bob Dornan two years ago, but was the very represenative Callista had staffed for while she and Gingrich were engaging in their illicit affair.<br><br>Gingrich refused to take any questions concerning his appointment, while Bush and Dole similarly ignored any request for comment. Gunderson could not be reached for comment. In his appointment, he'll become the first gay individual to serve in the Presidential Cabinet.</p>
-                    `)
-        e.executable.push([1, (() => {e.image = e.image = "https://i.imgur.com/18McsvH.jpeg"})])
+            if (e.player_answers.includes(3541)){
+                e.pages.push(`<h2><q><i>PRESIDENT-ELECT GINGRICH MEETS WITH PRESIDENT BUSH, ANNOUNCES FIRST PICKS FOR CABINET</i></q></h2>
+                        <br><br>President-elect Newt Gingrich made his trek to Washington today, meeting with incumbent President George Bush as is custom following presidential elections. They spoke for an hour before taking some questions in the Oval Office, with Gingrich mainly taking control of the situation and answering various reporters' inquiries on several key issues such as abortion, healthcare, gay marriage and foreign relations. He rejected every question asked pertaining to his ongoing divorce from his estranged wife, Marianne Gingrich, or concerning his mistress, Republican congressional staffer Callista Bisek.<br><br>Afterward, Gingrich made his way to a nearby pre-scheduled press conference as part of his transition into the presidency, where he updated the press corps on the plan for his upcoming cabinet. He announced the first set of names that'll be promoted to notable positions, including:<br><br>
+                        <p><center>Elizabeth Dole for Secretary of State (wife to Republican Senator Bob Dole and formerly Secretary of Labor under President Bush from 1989 to 1990)</center></p>
+                        <p><center>George W. Bush for Secretary of Agriculture (son to President Bush and former unsuccessful Republican nominee for governor of Texas in 1994</center></p>
+                        <p><center>Steve Gunderson for Chief of Staff (Wisconsin representative from the 3rd congressional district since 1981)</center></p>
+                        <br><br>Mr. Bush and Senator Dole, in attendance in place of his wife, were present to take questions. The announcement of Gunderson in particular drew immediate attention, as the congressman not only was exposed as a homosexual by California Represenative Bob Dornan two years ago, but was the very represenative Callista had staffed for while she and Gingrich were engaging in their illicit affair.<br><br>Gingrich refused to take any questions concerning his appointment, while Bush and Dole similarly ignored any request for comment. Gunderson could not be reached for comment. In his appointment, he'll become the first gay individual to serve in the Presidential Cabinet.</p>
+                        `)
+            e.executable.push([1, (() => {e.image = e.image = "https://i.imgur.com/18McsvH.jpeg"})])
+            }
         }
     
         //Perot late replacement
