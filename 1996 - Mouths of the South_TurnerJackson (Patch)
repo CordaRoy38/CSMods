@@ -1,4 +1,3 @@
-
 let e = campaignTrail_temp;
 
 function ctsAchievement(achievement, difficultyChecker = true){
